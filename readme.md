@@ -2,14 +2,14 @@
 
 An Open-source, On-body Sanitizer for the Pandemic
 
-## Contributor
-Pat Pataranutaporn (MIT Media Lab)
-Ali Shtarbanov	 (MIT Media Lab)
-Glenn Fernandes (MIT Media Lab)
-Jingwen Li (MIT Media Lab)
-Parinya Punpongsanon (Osaka University)
-Joe Paradiso (MIT Media Lab)
-Pattie Maes (MIT Media Lab)
+## Contributors
+* Pat Pataranutaporn (MIT Media Lab)
+* Ali Shtarbanov	 (MIT Media Lab)
+* Glenn Fernandes (MIT Media Lab)
+* Jingwen Li (MIT Media Lab)
+* Parinya Punpongsanon (Osaka University)
+* Joe Paradiso (MIT Media Lab)
+* Pattie Maes (MIT Media Lab)
 
 
 
