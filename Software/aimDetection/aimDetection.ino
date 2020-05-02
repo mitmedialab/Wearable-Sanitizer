@@ -4,7 +4,7 @@
 #define SAMPLES 10 //the number of samples over which we will average.
 #define SAMPLING_DELAY 50 //time between the consecutive SAMPLES in ms.
 #define AIM_THRESHOLD 0.2
-int acquisitionTime = 0; //updates whenver a new sample is obtained.
+int acquisitionTime = 0; //updates whenever a new sample is obtained.
 
 float xOld[SAMPLES], xNew[SAMPLES]; 
 float yOld[SAMPLES], yNew[SAMPLES];
@@ -64,7 +64,7 @@ void loop() {
     zAvgOld = zSumOld/10.0f;
     zAvgNew = zSumNew/10.0f;
   
-    //If the two averages are different by more than XX, then don't do enything. Else, flash LEDs.
+    //If the two averages are different by more than AIM_THRESHOLD, then don't do enything. Else, flash LEDs.
     if(abs(xAvgNew - xAvgOld) < AIM_THRESHOLD && abs(yAvgNew - yAvgOld) < AIM_THRESHOLD && abs(zAvgNew - zAvgOld) < AIM_THRESHOLD){
       Serial.println("Aiming");
       Serial.println(abs(xAvgNew - xAvgOld));
