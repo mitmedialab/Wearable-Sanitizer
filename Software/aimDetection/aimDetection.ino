@@ -1,12 +1,5 @@
 /*
- * 1. If the device has been steady for (SAMPLES * SAMPLING_DELAY) millisecondssecond, fire.
- * 2. Have a more clever aiming algorithm to distringuish between mo notion vs actual aiming.
- *  If the motion just dies out gradually, it is not because of aiming. But if it suddenly
- *  comes to a stop, then aiming is very likely happening.
- *  
- *  TODO: If it sprays once, it should not be able to spray again unless it has been shaken.
- *  TODO: If the spraying has occurred 
- * 
+ * If the device has been steady for (SAMPLES * SAMPLING_DELAY) millisecondssecond, fire.
  */
 #define SAMPLES 10 //the number of samples over which we will average.
 #define SAMPLING_DELAY 50 //time between the consecutive SAMPLES in ms.
@@ -31,14 +24,17 @@ void setup() {
 }
 
 void loop() {
-
-  //SImmple Algorithm:
-  //store the last 10 values of x in an array. Take the average accelerations over 1 second, one measurement
-  //every 100ms. If the last two average values are the samme, then assume that aiming is happening.
-  //But I don't want to have to store 10 values for a whole second before I know the next one. Instead,
-  //suppose I have an array of 20 items and I keep adding adding new readings to it while replacing the old ones, 
-  //one reading every 100ms. Then I average the last 10 values and the latest 10 values and compare them. 
-  //How do I shift the items in the array by 1. 
+  //Algorithm at High-Level:
+  //We are going to compare the average of the last 10samples to the average of the previous 10samples, and if the
+  //difference between the averages is less than some threshold, we say that the device is in aiming mode. We will acquire
+  //one nwe sample every SAMPLING_DELAY milliseconds. We must do this analysis after each new sample; we do NOT want to 
+  //have to take in all samples at once.
+  
+  //Algorithm Implementation:
+  //There are two arrays of size SAMPLES, where xNew stores last 10 new samples and xOld sotres the previous 10 samples.
+  //Every 100ms, an item at index i is tranferred from the new array to the old array at index i, and then a new sample is placed into the new
+  //array at that same index i. The index is then incremented until it reaches SAMPLES, at which point it is reset to 0. 
+  
   if(millis()-acquisitionTime >= SAMPLING_DELAY){
     //Get a new Sammple:
     float xSumOld = 0, xSumNew = 0, ySumOld = 0, ySumNew = 0, zSumOld = 0, zSumNew = 0;
@@ -76,7 +72,6 @@ void loop() {
     }
   }
 }
-
 
 void makeCircle(uint8_t brightness, uint8_t delayTime){ //the argument is the delay b/n LEDs.
   CircuitPlayground.setBrightness(brightness);
