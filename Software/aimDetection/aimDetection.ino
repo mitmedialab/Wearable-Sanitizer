@@ -1,5 +1,5 @@
 /*
- * 1. If the device has been steady for 1 second, fire
+ * 1. If the device has been steady for (SAMPLES * SAMPLING_DELAY) millisecondssecond, fire.
  * 2. Have a more clever aiming algorithm to distringuish between mo notion vs actual aiming.
  *  If the motion just dies out gradually, it is not because of aiming. But if it suddenly
  *  comes to a stop, then aiming is very likely happening.
