@@ -7,8 +7,8 @@
 #include <Adafruit_CircuitPlayground.h>
 
 //You must not use pins 4 and 5 (buttons).
-#define pumpPin 3
-#define in2 6 //this will be gnd
+#define pumpPin A2
+#define in2 A3 //this will be gnd
  
 bool fireButtonState = 0;
 bool prevFireButtonState = -1;
