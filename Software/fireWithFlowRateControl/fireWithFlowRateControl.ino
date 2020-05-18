@@ -6,8 +6,8 @@
  */
 #include <Adafruit_CircuitPlayground.h>
 
-#define pumpPin 3
-#define in2 6 //this will be gnd
+#define pumpPin A7
+#define in2 A6 //this will be gnd
  
 bool fireButtonState = 0;
 bool prevFireButtonState = -1;
@@ -26,6 +26,7 @@ void setup() {
   
   pinMode(pumpPin,OUTPUT);
   pinMode(in2,OUTPUT);
+  digitalWrite(pumpPin,HIGH);
   digitalWrite(in2,LOW);
 
   CircuitPlayground.setAccelRange(LIS3DH_RANGE_2_G);

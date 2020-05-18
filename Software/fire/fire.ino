@@ -7,8 +7,8 @@
 #include <Adafruit_CircuitPlayground.h>
 
 //You must not use pins 4 and 5 (buttons).
-#define pumpPin A2
-#define in2 A3 //this will be gnd
+#define pumpPin A1
+#define in2 A6 //this will be gnd
  
 bool fireButtonState = 0;
 bool prevFireButtonState = -1;
@@ -22,6 +22,8 @@ void setup() {
   pinMode(in2,OUTPUT);
   digitalWrite(in2,LOW);
 
+  
+
   makeCircle(1,70);
 }
 
@@ -33,7 +35,7 @@ void loop() {
     if(fireButtonState == HIGH){  //and if it is now pressed.
           makeCircle(1,70);
           Serial.println("HE");
-          //spray(255, 500);
+          spray(255, 500);
           delay(50); //debounce
     }
   }
@@ -47,20 +49,9 @@ void stopSpray(){
   digitalWrite(pumpPin,LOW);
 }
 void spray(uint8_t dutyCycle, int duration){
-  int startTime = millis();
-  bool spraying=false;
-  while(millis() < startTime + duration){
-      if(!spraying){
-        analogWrite(pumpPin, dutyCycle);
-        spraying=true;
-      }     
-      setPixelsRed(10);
-      delay(15);
-      setPixelsOff();
-      delay(15);
-  }
-  digitalWrite(pumpPin,LOW);
-  
+  analogWrite(pumpPin, dutyCycle);
+  delay(duration);
+  digitalWrite(pumpPin, LOW);
 }
 
 void setPixelsRed(uint8_t brightness){
