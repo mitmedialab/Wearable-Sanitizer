@@ -6,6 +6,8 @@ Disinfection of hands and frequently touched surfaces is an important factor in 
 
 **Here you will find the complete set of instructions, design files, and software to replicate our product and make one for yoursef.** We also highly encourage you you to make modificatins, changes, and imporovements to the hardware and software, and take this open-source project to the next level. And if you, please let us know, so we can add you as a contributor to the project.
 
+![Wearable Sanitizer](https://mitmedialab.github.com/wearable-sanitizer)
+
 # Parts List
 
 **Tools and Supplies**
