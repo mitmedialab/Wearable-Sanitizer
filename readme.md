@@ -6,15 +6,15 @@ Disinfection of hands and frequently touched surfaces is an important factor in 
 
 **Here you will find the complete set of instructions, design files, and software to replicate our product and make one for yoursef.** We also highly encourage you you to make modificatins, changes, and imporovements to the hardware and software, and take this open-source project to the next level. And if you, please let us know, so we can add you as a contributor to the project.
 
-## Parts List
+# Parts List
 
-# Tools and Supplies
+**Tools and Supplies**
 * 3D Printer (option A)
 * Soldering Iron
 * Solder
 * Isopropyl Alcohol or Hand Sanitizer
 
-# Parts
+**Parts**
 * [Circuit Playground Bluefruit](https://www.adafruit.com/product/4333)
 * [3.7V Lipo Battery](https://www.amazon.com/gp/product/B0137KTPP0/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 * [Lipo Battery Charger Board](https://www.adafruit.com/product/4410?gclid=Cj0KCQjwyJn5BRDrARIsADZ9ykH-8_URqe73tjxXn3k0Mr-ZtVUW1xlEEAGp860bloN-n62OpEQEftIaAuXeEALw_wcB)
@@ -23,23 +23,13 @@ Disinfection of hands and frequently touched surfaces is an important factor in 
 * [Silicone tube, 2mm ID](https://www.amazon.com/gp/product/B01MXLB6RF/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 * [Range Sensor Optical]
 * [Motor Driver Board]
-* 3D Printed Parts (option A)
+* Our 3D Printed Parts (option A)
 
-# Software
-* Arduino IDE
-* Adafruit Circuit Playground toolchain
-
-### Prerequisites
-
-* Arduino IDE
-* Adafruit Circuit Playground Toolchain
-
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+**Software**
+* [Arduino IDE](https://www.arduino.cc/en/Main/Software)
+* [Adafruit Circuit Playground toolchain](https://learn.adafruit.com/adafruit-circuit-playground-bluefruit/arduino-support-setup)
+* Our firmware code in the present repository
+* Our design files for 3D printing in the present repository
 
 ## License
 
