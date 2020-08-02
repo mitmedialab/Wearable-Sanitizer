@@ -31,7 +31,7 @@ Disinfection of hands and frequently touched surfaces is an important factor in 
 * [Arduino IDE](https://www.arduino.cc/en/Main/Software)
 * [Adafruit Circuit Playground toolchain](https://learn.adafruit.com/adafruit-circuit-playground-bluefruit/arduino-support-setup)
 * Our firmware code in the present repository
-* Our design files for 3D printing in the present repository
+* Our design files for 3D printing in the present repository (optional)
 
 ## License
 
