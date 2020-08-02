@@ -9,21 +9,23 @@ Disinfection of hands and frequently touched surfaces is an important factor in 
 # Parts List
 
 **Tools and Supplies**
-* 3D Printer (option A)
+* 3D Printer (optional)
 * Soldering Iron
 * Solder
 * Isopropyl Alcohol or Hand Sanitizer
 
 **Parts**
 * [Circuit Playground Bluefruit](https://www.adafruit.com/product/4333)
-* [3.7V Lipo Battery](https://www.amazon.com/gp/product/B0137KTPP0/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+* [3.7V Lipo Battery](https://www.amazon.com/gp/product/B07BTTQ1Z5/ref=ppx_yo_dt_b_asin_title_o00_s03?ie=UTF8&psc=1&fbclid=IwAR0VHRuMQ3OT94W_n598Cm5R4daCRMcEpSCtZfiCS0YGLu4FS2GrNITG9pY)
 * [Lipo Battery Charger Board](https://www.adafruit.com/product/4410?gclid=Cj0KCQjwyJn5BRDrARIsADZ9ykH-8_URqe73tjxXn3k0Mr-ZtVUW1xlEEAGp860bloN-n62OpEQEftIaAuXeEALw_wcB)
 * [SC3101PW Micro Pump](http://www.skoocomtech.com/water-pump/micro-water-pump-low-noise-low-flow-household.html)
 * [Wires](https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD2BWPY/ref=sr_1_3?dchild=1&keywords=jumper+wires&qid=1596400203&sr=8-3)
 * [Silicone tube, 2mm ID](https://www.amazon.com/gp/product/B01MXLB6RF/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
-* [Range Sensor Optical]
-* [Motor Driver Board]
-* Our 3D Printed Parts (option A)
+* [Range Sensor, Optical](https://www.amazon.com/gp/product/B07KW1XN5X/ref=ppx_yo_dt_b_asin_title_o00_s04?ie=UTF8&psc=1&fbclid=IwAR1zaJw88wfdSUdOT2sDhNDmuwILiiNnvnKA2V19sDSNkNJha0Tn7xVhcCQ)
+* [DC Motor Driver Board](https://www.amazon.com/gp/product/B075S368Y2/ref=ppx_yo_dt_b_asin_title_o04_s02?ie=UTF8&psc=1&fbclid=IwAR0wnHT_ezqs6ok47gJMiS6H1Im1NIs5L8QhV8ZdoQ2dPx3Jz-HEDRreuog)
+* [Slide Switch](https://www.amazon.com/gp/product/B07FVM3XYR/ref=ppx_yo_dt_b_asin_title_o00_s03?ie=UTF8&psc=1&fbclid=IwAR0sEizV8nm214ajeshcjKvFzWkqQTM9LxC0ek0ZxHcu34at9XKo1869S9E)
+* Our 3D Printed Parts OR [Silicone Travel Bottle](https://www.amazon.com/gp/product/B07BTG8CDX/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1&fbclid=IwAR144LJX_Na3m6d36KDuN2wzRryWhE-BvO60Rj8g-nBmobscf_A9fAlAhn4)
+* [Wrist Strap]()
 
 **Software**
 * [Arduino IDE](https://www.arduino.cc/en/Main/Software)
