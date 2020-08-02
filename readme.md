@@ -2,6 +2,10 @@
 
 An Open-source, On-body Sanitizer for the Pandemic
 
+Disinfection of hands and frequently touched surfaces is an important factor in preventing the spread of viral diseases such as COVID-19, as well as the common cold and flu. But that effort typically requires a great degree of discipline, and presents an inconvenience in terms of the mental and physical effort involved in frequent washing of hands or use of a pocket sanitizer. We developed an open-source, wearable sanitizer that provides just-in-time automatic dispensing of alcohol to the wearer’s hand or nearby objects using sensors and programmable cues, and it seamlessly integrates with the user’s body and behavior and frees their physical and mental faculties for other tasks. 
+
+**Here you will find the complete set of instructions, design files, and software to make one for yoursef.** We also highly encourage you you to make modificatins, changes, and imporovements to the hardware and software, and take this open-source project to the next level. And if you, please let us know, so we can add you as a contributor to the project.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -12,64 +16,11 @@ These instructions will get you a copy of the project up and running on your loc
 * Adafruit Circuit Playground Toolchain
 
 
-### Abstract
-
-Regular disinfection of hands and frequently touched surfaces is a key factor in preventing the spread of viral diseases such as COVID-19, as well as the common cold and flu. This effort requires a great degree of discipline, and presents an inconvenience in terms of the mental and physical effort involved in frequent washing of hands or use of a pocket sanitizer. We present an open-source, wearable sanitizer that provides just-in-time automatic dispensing of alcohol to the wearer’s hand or nearby objects using sensors and programmable cues. We systematically explore the design space for wearable sanitizers with the aim of creating a device that seamlessly integrates with the user’s body and behavior and frees their physical and mental faculties for other tasks. With these insights, we present our prototype and document the design process, device characterization, and our effort for open-sourcing this project.
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
 
 * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
