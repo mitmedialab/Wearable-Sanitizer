@@ -15,12 +15,12 @@ Disinfection of hands and frequently touched surfaces is an important factor in 
 * Isopropyl Alcohol or Hand Sanitizer
 
 # Parts
-* [Circuit Playground Bluefruit] (https://www.adafruit.com/product/4333)
-* [3.7V Lipo Battery] (https://www.amazon.com/gp/product/B0137KTPP0/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
-* [Lipo Battery Charger Board] (https://www.adafruit.com/product/4410?gclid=Cj0KCQjwyJn5BRDrARIsADZ9ykH-8_URqe73tjxXn3k0Mr-ZtVUW1xlEEAGp860bloN-n62OpEQEftIaAuXeEALw_wcB)
-* [SC3101PW Micro Pump] (http://www.skoocomtech.com/water-pump/micro-water-pump-low-noise-low-flow-household.html)
-* [Wires] (https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD2BWPY/ref=sr_1_3?dchild=1&keywords=jumper+wires&qid=1596400203&sr=8-3)
-* [Silicone tube, 2mm ID] (https://www.amazon.com/gp/product/B01MXLB6RF/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+* [Circuit Playground Bluefruit](https://www.adafruit.com/product/4333)
+* [3.7V Lipo Battery](https://www.amazon.com/gp/product/B0137KTPP0/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+* [Lipo Battery Charger Board](https://www.adafruit.com/product/4410?gclid=Cj0KCQjwyJn5BRDrARIsADZ9ykH-8_URqe73tjxXn3k0Mr-ZtVUW1xlEEAGp860bloN-n62OpEQEftIaAuXeEALw_wcB)
+* [SC3101PW Micro Pump](http://www.skoocomtech.com/water-pump/micro-water-pump-low-noise-low-flow-household.html)
+* [Wires](https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD2BWPY/ref=sr_1_3?dchild=1&keywords=jumper+wires&qid=1596400203&sr=8-3)
+* [Silicone tube, 2mm ID](https://www.amazon.com/gp/product/B01MXLB6RF/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 * [Range Sensor Optical]
 * [Motor Driver Board]
 * 3D Printed Parts (option A)
