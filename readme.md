@@ -2,28 +2,15 @@
 
 An Open-source, On-body Sanitizer for the Pandemic
 
-## Contributors
-* Pat Pataranutaporn (MIT Media Lab)
-* Ali Shtarbanov	 (MIT Media Lab)
-* Glenn Fernandes (MIT Media Lab)
-* Jingwen Li (MIT Media Lab)
-* Parinya Punpongsanon (Osaka University)
-* Joe Paradiso (MIT Media Lab)
-* Pattie Maes (MIT Media Lab)
-
-
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+* Arduino IDE
+* Adafruit Circuit Playground Toolchain
 
-```
-Give examples
-```
 
 ### Abstract
 
@@ -88,9 +75,11 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-s
+## Contributors
+* Pat Pataranutaporn (MIT Media Lab)
+* Ali Shtarbanov	 (MIT Media Lab)
+* Glenn Fernandes (MIT Media Lab)
+* Jingwen Li (MIT Media Lab)
+* Parinya Punpongsanon (Osaka University)
+* Joe Paradiso (MIT Media Lab)
+* Pattie Maes (MIT Media Lab)
