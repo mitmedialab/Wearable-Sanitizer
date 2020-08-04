@@ -14,6 +14,7 @@ Disinfection of hands and frequently touched surfaces is an important factor in 
 **Tools and Supplies**
 * 3D Printer (optional)
 * Soldering Iron and Solder
+* Tweezers
 * Hot glue gun with hot glue
 * Scissors
 * Isopropyl Alcohol or Hand Sanitizer
