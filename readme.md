@@ -29,7 +29,7 @@ Disinfection of hands and frequently touched surfaces is an important factor in 
 * [DC Motor Driver Board](https://www.amazon.com/gp/product/B075S368Y2/ref=ppx_yo_dt_b_asin_title_o04_s02?ie=UTF8&psc=1&fbclid=IwAR0wnHT_ezqs6ok47gJMiS6H1Im1NIs5L8QhV8ZdoQ2dPx3Jz-HEDRreuog)
 * [Slide Switch](https://www.amazon.com/gp/product/B07FVM3XYR/ref=ppx_yo_dt_b_asin_title_o00_s03?ie=UTF8&psc=1&fbclid=IwAR0sEizV8nm214ajeshcjKvFzWkqQTM9LxC0ek0ZxHcu34at9XKo1869S9E)
 * Our 3D Printed Parts OR [Silicone Travel Bottle](https://www.amazon.com/gp/product/B07BTG8CDX/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1&fbclid=IwAR144LJX_Na3m6d36KDuN2wzRryWhE-BvO60Rj8g-nBmobscf_A9fAlAhn4)
-* [Wrist Strap]()
+* [Wrist Strap](https://www.amazon.com/gp/product/B00FQ937NM/ref=ppx_yo_dt_b_asin_title_o05_s01?ie=UTF8&psc=1&fbclid=IwAR16Sdupqd_N2jO_jeQX_FQLL6s26lFJGLDnGuhSuTtzFYAA_vJ2JhMoFog)
 
 **Software**
 * [Arduino IDE](https://www.arduino.cc/en/Main/Software)
