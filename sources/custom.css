@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Nunito+Sans:wght@400;600&display=swap');
+
+.va {
+  display: flex;
+  align-items: center;
+}
+
+.bg-main{
+/* background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Plum_trees_Kitano_Tenmangu.jpg/1200px-Plum_trees_Kitano_Tenmangu.jpg); */
+background-image: url(./main.jpg);
+/* background-image: url(./assembled.png); */
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 500px;
+}
+
+.bg-instructions{
+/* background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Plum_trees_Kitano_Tenmangu.jpg/1200px-Plum_trees_Kitano_Tenmangu.jpg); */
+background-image: url(./exploded.png);
+/* background-image: url(./assembled.png);
+; */
+background-position: center;
+background-size: auto;
+background-repeat: no-repeat;
+height: 500px;
+opacity: 0.9;
+}
+
+html {
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  background: #24272c;
+}
+
+.hero {
+  background: #060606;
+}
+
+.title,
+.subtitle {
+  color: white;
+}
+
+.navbar .navbar-item {
+  color: #e4e2ff;
+}
+
+.navbar .navbar-item.is-active {
+  color: #e4e2ff;
+  font-weight: 700;
+}
+
+.navbar .navbar-item:hover {
+  background: transparent;
+  color: white;
+}
+
+.navbar .navbar-item a {
+  margin-left: 1rem;
+  color: #e4e2ff;
+}
+
+.bg-color-dark{
+  background: #191b1f;
+}
+.blog-posts {
+  min-height: 100vh;
+  background: #191b1f;
+  padding-top: 4rem;
+  padding-bottom: 10rem;
+}
+
+.blog-posts article {
+  padding: 1.5rem;
+}
+
+.blog-posts .post img {
+  border-radius: 6px;
+}
+
+.blog-posts .post .post-category {
+  color: #3b7adf;
+}
+
+.blog-posts .post .post-title {
+  font-size: 2.2rem;
+}
+
+.blog-posts .post .post-excerpt {
+  line-height: 1.5rem;
+  letter-spacing: .03rem;
+  font-size: 1.2rem;
+  font-family: 'IBM Plex Serif', serif;
+  color: #92a3ab;
+}
+
+.blog-posts .post .featured .featured-image img {
+  height: 380px;
+}
