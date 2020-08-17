@@ -6,8 +6,14 @@
  
 #include <Adafruit_CircuitPlayground.h>
 #include <Wire.h>
- 
-#define ROTATION_RATE   50;    // lower is faster
+
+//animation
+#define ROTATION_RATE   20;    // lower is faster
+int animation_break = 0;
+int animation_delay = 50;
+
+
+//pump
 int in1 = A1; //pump pin
 int in2 = A6; //pump pin
 
@@ -24,7 +30,10 @@ unsigned char dirsend_flag=0;
 
 bool leftButtonPressed;
 bool rightButtonPressed;
-int mode = 0;
+int mode = 1;
+
+float X1, Y1, Z1, X2, Y2, Z2;
+float delta;
 
 ///////////////////////////////////////////////////////////////////////////////
 void setup() {
@@ -33,28 +42,33 @@ void setup() {
   pinMode(in2, OUTPUT);
   Wire.begin(); 
   Serial.begin(9600,SERIAL_8N1); 
-  CircuitPlayground.setBrightness(200);
+  CircuitPlayground.setBrightness(10);
 }
  
  
 ///////////////////////////////////////////////////////////////////////////////
 void loop() {
 
-   int x=ReadDistance();
-   Serial.print(x);
-   Serial.println(" mm");
-  
-  CircuitPlayground.clearPixels();
+  // int x=ReadDistance();
+  // Serial.print(x);
+  // Serial.println(" mm");
   button_check();
+  if (mode == 1){mode1();}
+    else if (mode == 2){mode2();}
+    else if (mode == 3){mode3();}
+    else{mode = 1; mode1();}
+  //delta_accel();
 }
 
 void mode_update()
   {
-    if (mode == 3)
-       {mode = 0;}
-    else{mode++;}
+    mode++;
+    //animation_break = 1;
+    CircuitPlayground.clearPixels();
+    
 
     Serial.println(mode);
+
   }
 
 void button_check()
@@ -66,35 +80,118 @@ void button_check()
   if (leftButtonPressed) {
     Serial.println("Left DOWN");
     mode_update();
-    delay(600);
+    delay(50);
     } 
     else {
       //Serial.print("  UP");
       }
   //Serial.print("   Right Button: ");
   if (rightButtonPressed) {
-    Serial.println("Right DOWN");
-    shoot_1();
-    delay(10);
+      if(mode == 1){
+        Serial.println("Right DOWN");
+        shoot_1();
+        delay(4);
+      }
     } 
     else {
       //Serial.print("  UP");
     }
   }
 
+//Mode 1
+void mode1(){
+    CircuitPlayground.setPixelColor(0, 255, 0, 0);
+    delay(animation_delay);
+    CircuitPlayground.setPixelColor(1, 200, 50, 0);
+    delay(animation_delay);
+    CircuitPlayground.setPixelColor(2, 100, 100, 0);
+    delay(animation_delay);
+    CircuitPlayground.setPixelColor(3, 50, 200, 0);
+    delay(animation_delay);
+    CircuitPlayground.setPixelColor(4, 0, 255, 0);
+    delay(animation_delay);
+    CircuitPlayground.setPixelColor(5, 0, 200, 50);
+    delay(animation_delay);
+    CircuitPlayground.setPixelColor(6, 0, 100, 100);
+    delay(animation_delay);
+    CircuitPlayground.setPixelColor(7, 0, 0, 255);
+    delay(animation_delay);
+    CircuitPlayground.setPixelColor(8, 50, 0, 200);
+    delay(animation_delay);
+    CircuitPlayground.setPixelColor(9, 100, 0, 100);
+  }
+
+void mode2(){
+  for (int i =0; i < 10; i++){
+    CircuitPlayground.setPixelColor(i, 255, 0, 0);
+    delay(animation_delay);
+  }
+   int x=ReadDistance();
+   Serial.println(x);
+   if (x < 120){
+    shoot_2();
+     }
+    
+}
+void mode3(){
+   for (int i =0; i < 10; i++){
+    CircuitPlayground.setPixelColor(i, 0, 255, 0);
+    delay(animation_delay);
+   }
+
+  int x=ReadDistance();
+  Serial.println(x);
+  if (x < 120){
+        X1 = CircuitPlayground.motionX();
+        Y1 = CircuitPlayground.motionY();
+        Z1 = CircuitPlayground.motionZ();
+        delay(100);
+        X2 = CircuitPlayground.motionX();
+        Y2 = CircuitPlayground.motionY();
+        Z2 = CircuitPlayground.motionZ();
+        delta = abs((X2-X1) + (Y2-Y1) + (Z2-Z1))/3;
+        Serial.println(delta);
+        delay(50);
+        if (delta < 10){
+          shoot_2();
+           }
+        }
+     }
+  
+
+
+
 
   
 //Mode 1
 void shoot_1()
 {
-  for (int i =0; i < 3; i++)    {
-    rainbowCycle(0);
+  //CircuitPlayground.clearPixels();
+  for (int i =0; i < 1; i++)    {
+    rainbowCycle(4);
       digitalWrite(in2, LOW);
       digitalWrite(in1, HIGH);
       delay(120);
       digitalWrite(in2, LOW);
       digitalWrite(in1, LOW);
       delay(300);
+    }
+  
+  
+  }
+
+//Mode 2
+void shoot_2()
+{
+  //CircuitPlayground.clearPixels();
+    rainbowCycle(4);
+    for (int i =0; i < 4; i++)    {
+      digitalWrite(in2, LOW);
+      digitalWrite(in1, HIGH);
+      delay(100);
+      digitalWrite(in2, LOW);
+      digitalWrite(in1, LOW);
+      delay(100);
     }
   
   
@@ -108,7 +205,9 @@ void rainbow(uint8_t wait) {
   uint16_t i, j;
 
   for(j=0; j<256; j++) {
+    if (animation_break == 1){break;}
     for(i=0; i<10; i++) {
+      if (animation_break == 1){break;}
       CircuitPlayground.setPixelColor(i, Wheel(i+j));
     }
     delay(wait);
@@ -118,11 +217,13 @@ void rainbow(uint8_t wait) {
 void rainbowCycle(uint8_t wait) {
   uint16_t i, j;
 
-  for(j=0; j<256*1; j++) { // 5 cycles of all colors on wheel
+  for(j=0; j<256*1; j=j+wait) { // 5 cycles of all colors on wheel
+    if (animation_break == 1){break;}
     for(i=0; i< 10; i++) {
+       if (animation_break == 1){break;}
       CircuitPlayground.setPixelColor(i, Wheel(((i * 256 / 10) + j) & 255));
     }
-    delay(wait);
+    delay(0);
   }
 }
 
@@ -193,6 +294,6 @@ int ReadDistance(){
     lenth_val=i2c_rx_buf[0];
     lenth_val=lenth_val<<8;
     lenth_val|=i2c_rx_buf[1];
-    delay(300); 
+    delay(100); 
     return lenth_val;
 }
