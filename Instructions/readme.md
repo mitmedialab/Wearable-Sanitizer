@@ -14,7 +14,7 @@ What things you need to install the software and how to install them
 Give examples
 ```
 
-### Abstracct
+### Abstract
 
 Regular disinfection of hands and frequently touched surfaces is a key factor in preventing the spread of viral diseases such as COVID-19, as well as the common cold and flu. This effort requires a great degree of discipline, and presents an inconvenience in terms of the mental and physical effort involved in frequent washing of hands or use of a pocket sanitizer. We present an open-source, wearable sanitizer that provides just-in-time automatic dispensing of alcohol to the wearer’s hand or nearby objects using sensors and programmable cues. We systematically explore the design space for wearable sanitizers with the aim of creating a device that seamlessly integrates with the user’s body and behavior and frees their physical and mental faculties for other tasks. With these insights, we present our prototype and document the design process, device characterization, and our effort for open-sourcing this project.
 ```
